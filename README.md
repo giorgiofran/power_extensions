@@ -23,6 +23,7 @@ The BigIntExtension class contains the following methods:
 ```dart
 BigInt.from(-1000000001).isPowerOfTen;
 ```
+
 See the example folder for more examples
 
 ## Additional information
