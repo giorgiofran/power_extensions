@@ -1,4 +1,4 @@
-import 'package:core_extensions/src/big_int_extension_base.dart';
+import 'package:power_extensions/src/big_int_extension_base.dart';
 
 bool isPowerOfTenDivision(BigInt value) => powerOfTenDivision(value) != 0;
 

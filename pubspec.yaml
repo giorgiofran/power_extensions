@@ -1,4 +1,4 @@
-name: core_extensions
+name: power_extensions
 description: Extensions for the core dart language classes.
 version: 0.1.0
 homepage: https://github.com/giorgiofran/core_extensions.git

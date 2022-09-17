@@ -1,4 +1,4 @@
-import 'package:core_extensions/big_int_extension.dart';
+import 'package:power_extensions/big_int_extension.dart';
 import 'package:test/test.dart';
 import '../performance/power_of_ten_classes/power_of_ten_division.dart';
 
