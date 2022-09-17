@@ -28,4 +28,4 @@ See the example folder for more examples
 
 ## Additional information
 
-File issues on the github repository
+File issues on the [github repository](https://github.com/giorgiofran/power_extensions/issues)
