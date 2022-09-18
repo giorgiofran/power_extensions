@@ -65,8 +65,8 @@ void main() {
       expect(isPowerOfTenDivision(noPow5), isFalse);
     });
   });
- group('Precision', () {
-     test('Standard Method', () {
+  group('Precision', () {
+    test('Standard Method', () {
       expect(powZero.precision, 1);
       expect(pow1.precision, 2);
       expect(pow2.precision, 10);
@@ -79,7 +79,7 @@ void main() {
     });
   });
   group('Scale', () {
-     test('Standard Method', () {
+    test('Standard Method', () {
       expect(powZero.scale, 0);
       expect(pow1.scale, -1);
       expect(pow2.scale, -9);
