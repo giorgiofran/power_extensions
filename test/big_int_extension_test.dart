@@ -19,26 +19,26 @@ void main() {
   });
   group('Power of Ten', () {
     test('Exponent Standard Method', () {
-      expect(powZero.powerOfTen, 0);
+      expect(powZero.powerOfTen, -1);
       expect(pow1.powerOfTen, 1);
-      expect(pow2.powerOfTen, -9);
+      expect(pow2.powerOfTen, 9);
       expect(pow3.powerOfTen, 33);
-      expect(noPow1.powerOfTen, 0);
-      expect(noPow2.powerOfTen, 0);
-      expect(noPow3.powerOfTen, 0);
-      expect(noPow4.powerOfTen, 0);
+      expect(noPow1.powerOfTen, -1);
+      expect(noPow2.powerOfTen, -1);
+      expect(noPow3.powerOfTen, -1);
+      expect(noPow4.powerOfTen, -1);
       expect(noPow5.powerOfTen, 0);
     });
 
     test('Exponent Division Method', () {
-      expect(powerOfTenDivision(powZero), 0);
+      expect(powerOfTenDivision(powZero), -1);
       expect(powerOfTenDivision(pow1), 1);
-      expect(powerOfTenDivision(pow2), -9);
+      expect(powerOfTenDivision(pow2), 9);
       expect(powerOfTenDivision(pow3), 33);
-      expect(powerOfTenDivision(noPow1), 0);
-      expect(powerOfTenDivision(noPow2), 0);
-      expect(powerOfTenDivision(noPow3), 0);
-      expect(powerOfTenDivision(noPow4), 0);
+      expect(powerOfTenDivision(noPow1), -1);
+      expect(powerOfTenDivision(noPow2), -1);
+      expect(powerOfTenDivision(noPow3), -1);
+      expect(powerOfTenDivision(noPow4), -1);
       expect(powerOfTenDivision(noPow5), 0);
     });
     test('Is Power Of Ten Standard Method', () {
@@ -65,7 +65,32 @@ void main() {
       expect(isPowerOfTenDivision(noPow5), isFalse);
     });
   });
-
+ group('Precision', () {
+     test('Standard Method', () {
+      expect(powZero.precision, 1);
+      expect(pow1.precision, 2);
+      expect(pow2.precision, 10);
+      expect(pow3.precision, 34);
+      expect(noPow1.precision, 2);
+      expect(noPow2.precision, 10);
+      expect(noPow3.precision, 48);
+      expect(noPow4.precision, 3);
+      expect(noPow5.precision, 1);
+    });
+  });
+  group('Scale', () {
+     test('Standard Method', () {
+      expect(powZero.scale, 0);
+      expect(pow1.scale, -1);
+      expect(pow2.scale, -9);
+      expect(pow3.scale, -33);
+      expect(noPow1.scale, 0);
+      expect(noPow2.scale, 0);
+      expect(noPow3.scale, -1);
+      expect(noPow4.scale, -1);
+      expect(noPow5.scale, 0);
+    });
+  });
   group('Significand', () {
     test('String', () {
       expect(powZero.significandString, '0');

@@ -8,8 +8,10 @@ This package contains useful extensions for the dart language core classes
 
 The BigIntExtension class contains the following methods:
 
+- precision
 - powerOfTen
 - isPowerOfTen
+- scale
 - significandString
 - significand
 - significandLength
