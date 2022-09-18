@@ -1,7 +1,7 @@
 name: power_extensions
 description: Extensions for the core dart language classes.
 version: 0.1.1
-homepage: https://github.com/giorgiofran/core_extensions.git
+homepage: https://github.com/giorgiofran/power_extensions.git
 
 environment:
   sdk: '>=2.18.0 <3.0.0'
