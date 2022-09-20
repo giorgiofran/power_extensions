@@ -15,9 +15,9 @@ int powerOfTenDivision(BigInt value) {
     if (value == BigInt.one) {
       return isNegative ? -i : i;
     }
-    if (value % BigIntExtension.ten != BigInt.zero) {
+    if (value % BigIntExtensionBase.ten != BigInt.zero) {
       return 0;
     }
-    value ~/= BigIntExtension.ten;
+    value ~/= BigIntExtensionBase.ten;
   }
 }

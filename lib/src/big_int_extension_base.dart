@@ -1,4 +1,4 @@
-extension BigIntExtension on BigInt {
+extension BigIntExtensionBase on BigInt {
   static BigInt ten = BigInt.from(10);
 
   /// powerOfTen

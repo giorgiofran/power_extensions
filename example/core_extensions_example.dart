@@ -1,4 +1,4 @@
-import 'package:power_extensions/core_extensions.dart';
+import 'package:power_extensions/power_extensions.dart';
 
 void main() {
   BigInt bigInt = BigInt.from(-1000000000);

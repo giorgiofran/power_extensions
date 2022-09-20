@@ -6,7 +6,7 @@ This package contains useful extensions for the dart language core classes
 
 ### BigInt
 
-The BigIntExtension class contains the following methods:
+The BigIntExtensionBase class contains the following methods:
 
 - powerOfTen
 - isPowerOfTen
@@ -14,9 +14,16 @@ The BigIntExtension class contains the following methods:
 - significand
 - significandLength
 
+### String
+
+The StringExtensionBase class contains the following methods:
+
+- trimLeftChar
+- trimRightChar
+
 ## Getting started
 
-  Simply import the package and use the core_extensions libray or the big_int_extension one (at present it is the only one).
+  Simply import the package and use the core_extensions libray or area ones.
 
 ## Usage
 
