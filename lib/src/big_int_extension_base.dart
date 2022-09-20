@@ -3,12 +3,15 @@ extension BigIntExtensionBase on BigInt {
 
   /// powerOfTen
   ///
-  /// Returns the exponent needed to obtain the number base 10 (also negative)
-  /// or zero if is not a power of ten or if it is == one
-  /// Ex. 10 ==> 1, 100 ==> 2, -1000 ==> -3, 1357 ==> 0, 1 ==> 0
+  /// Given a number this methods verifies if its is of type 10^n
+  /// If yes it returns n, otherwise -1
+  /// Ex. 10 ==> 1, 100 ==> 2, -1000 ==> 3, 1357 ==> -1, 1 ==> 0, 0 ==> -1
   /// Please note that this method relies on the fact the BigInt.toString()
   /// does not contain thousand's separators
   int get powerOfTen {
+    if (this == BigInt.one) {
+      return 0;
+    }
     BigInt bigInt = isNegative ? -this : this;
 
     // Convert x to string.
@@ -16,21 +19,47 @@ extension BigIntExtensionBase on BigInt {
 
     // Check if string contains '1' followed by '0'-s.
     if (s[0] != '1' || s.length == 1) {
-      return 0;
+      return -1;
     }
     int i = 1;
     for (; i < s.length; ++i) {
       if (s[i] != '0') {
-        return 0;
+        return -1;
       }
     }
-    return isNegative ? 1 - i : i - 1;
+    return i - 1;
+  }
+
+  /// scale
+  ///
+  /// Given a number this methods verifies if it is of the form x * 10^-n
+  /// If yes it returns n, for zero returns zero
+  /// Note that, as we are talking about integers, n will always be negative
+  /// Ex. 10 ==> -1, 100 ==> -2, -1000 ==> -3, 1357 ==> 0, 1 ==> 0, 0 ==> 0
+  /// Please note that this method relies on the fact the BigInt.toString()
+  /// does not contain thousand's separators
+  int get scale {
+    if (this == BigInt.zero) {
+      return 0;
+    }
+    BigInt bigInt = isNegative ? -this : this;
+
+    // Convert x to string.
+    var s = bigInt.toString();
+
+    int i = s.length - 1;
+    for (; i >= 0; i--) {
+      if (s[i] != '0') {
+        return i + 1 - s.length;
+      }
+    }
+    return 1 - s.length;
   }
 
   /// Is Power Of Ten
   ///
   /// Returns true if this big int is a power of 10 (1 return false)
-  bool get isPowerOfTen => powerOfTen != 0;
+  bool get isPowerOfTen => powerOfTen > 0;
 
   /// Precision
   ///
