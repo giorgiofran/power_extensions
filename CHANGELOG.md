@@ -1,9 +1,12 @@
 # Cahngelog
 
+## 0.2.1
+
+- changed minimum environment requirment
+
 ## 0.2.0
 
 - Added String methods Trim Left/Right for a specific char
-
 
 ## 0.1.1
 

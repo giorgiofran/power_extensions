@@ -25,7 +25,7 @@ The StringExtensionBase class contains the following methods:
 
 ## Getting started
 
-  Simply import the package and use the core_extensions libray or area ones.
+  Simply import the package and use the power_extensions libray or area ones.
 
 ## Usage
 
