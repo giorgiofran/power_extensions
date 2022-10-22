@@ -1,5 +1,9 @@
 # Cahngelog
 
+## 0.2.2
+
+- New String methods
+
 ## 0.2.1
 
 - changed minimum environment requirment

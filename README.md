@@ -22,6 +22,21 @@ The StringExtensionBase class contains the following methods:
 
 - trimLeftChar
 - trimRightChar
+- cut
+- cutAndAlign
+- preserveOnlyChars
+- splitInLines
+- capitalizeAndLowercase
+- capitalizeAndLowercaseAnyWord
+- capitalizeRestUnchanged
+- uncapitalizeRestUnchanged
+- onlyContainsDigits
+- onlyContainsAlpha
+- isDartIdentifier
+- getDartIdentifier
+- startsAndEndsWith
+- trimDelimiters
+- trimStringDelimiters
 
 ## Getting started
 
