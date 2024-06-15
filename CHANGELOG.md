@@ -1,5 +1,9 @@
 # Cahngelog
 
+## 0.2.3
+
+- Updated SDK
+
 ## 0.2.2
 
 - New String methods

@@ -1,4 +1,4 @@
-import 'reg_exp.dart';
+import 'utils/reg_exp.dart';
 
 extension StringExtensionBase on String {
   String trimLeftChar(String c) {
