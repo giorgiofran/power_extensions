@@ -1,3 +1,3 @@
-library big_int_extension;
+library;
 
 export 'src/big_int_extension_base.dart';

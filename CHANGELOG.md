@@ -1,5 +1,9 @@
 # Cahngelog
 
+## 0.2.4
+
+- Updated Dependencies and Lints
+
 ## 0.2.3
 
 - Updated SDK

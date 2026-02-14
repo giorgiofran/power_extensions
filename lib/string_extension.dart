@@ -1,3 +1,3 @@
-library string_extension;
+library;
 
 export 'src/string_extension_base.dart';
